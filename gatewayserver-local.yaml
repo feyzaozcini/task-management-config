@@ -16,6 +16,10 @@ spring:
           uri: http://localhost:8888
           predicates:
             - Path=/eureka/**
+        - id: projectservice
+          uri: lb://projectservice
+          predicates:
+            - Path=/api/v1/project/**
         
 
 server:
