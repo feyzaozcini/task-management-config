@@ -15,7 +15,7 @@ couchbase:
 server:
   port: 8096
 kafka:
-  host: localhost:9092
+  host: localhost:29092
   topics:
     task-created:
       topic: taskservice.task_created.0
