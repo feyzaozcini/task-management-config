@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: notificationservice
+
+couchbase:
+  notification-service:
+    config:
+      bootstrapHosts: localhost
+      notificationBucket: notification
+      notificationBucketUsername: admin
+      notificationPassword: 123456
+      queryTimeout: 300
+      kvTimeout: 5
+      connectionTimeout: 10
+
+server:
+  port: 8094
+
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+        defaultZone: http://localhost:8888/eureka/
