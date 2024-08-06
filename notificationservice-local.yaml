@@ -1,3 +1,6 @@
+spring:
+  application:
+    name: notificationservice
 couchbase:
   notification-service:
     config:
