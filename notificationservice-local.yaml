@@ -11,7 +11,14 @@ couchbase:
 
 server:
   port: 8096
-
+kafka:
+  host: localhost:9092
+  topics:
+    task-created:
+      topic: taskservice.task_created.0
+      consumerGroup: ${spring.application.name}-task-created-consumer
+      replicationFactor: 1
+      retentionInMs: 604800000
 eureka:
   client:
     registerWithEureka: true
