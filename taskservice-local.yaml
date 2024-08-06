@@ -15,7 +15,7 @@ spring:
 server:
   port: 8090
 kafka:
-    host: localhost:9092
+    host: localhost:29092
     topics:
       task-created:
         topicName: ${spring.application.name}.task_created.0
