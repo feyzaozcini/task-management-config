@@ -17,6 +17,11 @@ server:
 kafka:
   host: localhost:29092
   topics:
+    task-updated:
+      topic: taskservice.task_updated.0
+      consumerGroup: ${spring.application.name}-task-updated-consumer
+      replicationFactor: 1
+      retentionInMs: 604800000
     task-created:
       topic: taskservice.task_created.0
       consumerGroup: ${spring.application.name}-task-created-consumer
