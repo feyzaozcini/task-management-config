@@ -13,7 +13,7 @@ couchbase:
       connectionTimeout: 10
 
 server:
-  port: 8096
+  port: 0
 kafka:
   host: localhost:29092
   topics:
