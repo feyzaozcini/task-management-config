@@ -1,9 +1,4 @@
 spring:
-  redis:
-    host: 127.0.0.1
-    port: 6379
-  cache:
-    type: redis
   datasource:
     url: jdbc:postgresql://localhost:5432/projectservice
     username: postgres
@@ -14,6 +9,11 @@ spring:
         dialect: org.hibernate.dialect.PostgreSQLDialect
     hibernate:
       ddl-auto: update
+ redis:
+    host: 127.0.0.1
+    port: 6379
+  cache:
+    type: redis
 
 server:
   port: 8094
