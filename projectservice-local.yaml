@@ -1,4 +1,6 @@
 spring:
+  cache:
+    type: redis
   datasource:
     url: jdbc:postgresql://localhost:5432/projectservice
     username: postgres
